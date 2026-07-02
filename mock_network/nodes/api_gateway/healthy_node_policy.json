@@ -1,0 +1,9 @@
+{
+  "healthy_thresholds": {
+    "cpu_percent": 75,
+    "disk_percent": 85,
+    "latency_ms": 100,
+    "memory_percent": 80
+  },
+  "node_id": "api_gateway"
+}

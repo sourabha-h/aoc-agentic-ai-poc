@@ -1,0 +1,7 @@
+{
+  "dependencies": [
+    "oracle_database"
+  ],
+  "display_name": "Subscriber Data Platform",
+  "node_id": "subscriber_platform"
+}

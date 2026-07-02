@@ -1,0 +1,7 @@
+{
+  "attempts": 2,
+  "description": "Archive storage cleanup succeeds after one failed attempt.",
+  "final_status": "healthy",
+  "retry_flow": true,
+  "scenario_id": "archive_storage_cleanup_retry_success"
+}

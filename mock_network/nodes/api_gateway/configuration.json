@@ -1,0 +1,7 @@
+{
+  "dependencies": [
+    "order_platform"
+  ],
+  "display_name": "API Routing Gateway",
+  "node_id": "api_gateway"
+}

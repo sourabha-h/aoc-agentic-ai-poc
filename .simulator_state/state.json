@@ -1,0 +1,39 @@
+{
+  "current_stage": "initial",
+  "remediation_attempts": 0,
+  "scenario_definition": {
+    "affected_nodes": [
+      "archive_backup_storage",
+      "oracle_database"
+    ],
+    "description": "Archive storage cleanup fails once, retries, and succeeds.",
+    "execution_style": "retry_success",
+    "expected_discovery": [
+      "Archive storage capacity above 95%",
+      "Retry cleanup required after the first pass failed"
+    ],
+    "expected_final_status": "healthy",
+    "expected_remediation_attempts": 2,
+    "injected_conditions": [
+      {
+        "condition": "capacity_used_percent_gt_95",
+        "evidence": [
+          "Archive storage utilization reached 97.2%",
+          "First cleanup pass did not free enough space"
+        ],
+        "node_id": "archive_backup_storage"
+      },
+      {
+        "condition": "oracle_archive_destination_error",
+        "evidence": [
+          "ORA-19809: limit exceeded for recovery files",
+          "Oracle archive destination recovered after retry"
+        ],
+        "node_id": "oracle_database"
+      }
+    ],
+    "scenario_id": "archive_storage_cleanup_retry_success"
+  },
+  "scenario_id": "archive_storage_cleanup_retry_success",
+  "verification_status": "pending"
+}

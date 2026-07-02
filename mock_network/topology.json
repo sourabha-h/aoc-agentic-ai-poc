@@ -1,0 +1,88 @@
+{
+  "dependencies": [
+    {
+      "from": "billing_server",
+      "to": "oracle_database"
+    },
+    {
+      "from": "billing_server",
+      "to": "subscriber_platform"
+    },
+    {
+      "from": "oracle_database",
+      "to": "archive_storage"
+    },
+    {
+      "from": "order_platform",
+      "to": "oracle_database"
+    },
+    {
+      "from": "order_platform",
+      "to": "subscriber_platform"
+    },
+    {
+      "from": "subscriber_platform",
+      "to": "oracle_database"
+    },
+    {
+      "from": "sms_gateway",
+      "to": "api_gateway"
+    },
+    {
+      "from": "api_gateway",
+      "to": "order_platform"
+    }
+  ],
+  "generated_at": "2026-06-01T08:00:00+00:00",
+  "nodes": [
+    {
+      "dependencies": [
+        "oracle_database",
+        "subscriber_platform"
+      ],
+      "display_name": "Oracle BRM Billing Server",
+      "node_id": "billing_server"
+    },
+    {
+      "dependencies": [
+        "archive_storage"
+      ],
+      "display_name": "Oracle Database",
+      "node_id": "oracle_database"
+    },
+    {
+      "dependencies": [],
+      "display_name": "Archive and Backup Storage",
+      "node_id": "archive_storage"
+    },
+    {
+      "dependencies": [
+        "oracle_database",
+        "subscriber_platform"
+      ],
+      "display_name": "Order Activation Platform",
+      "node_id": "order_platform"
+    },
+    {
+      "dependencies": [
+        "oracle_database"
+      ],
+      "display_name": "Subscriber Data Platform",
+      "node_id": "subscriber_platform"
+    },
+    {
+      "dependencies": [
+        "api_gateway"
+      ],
+      "display_name": "SMS Gateway",
+      "node_id": "sms_gateway"
+    },
+    {
+      "dependencies": [
+        "order_platform"
+      ],
+      "display_name": "API Routing Gateway",
+      "node_id": "api_gateway"
+    }
+  ]
+}

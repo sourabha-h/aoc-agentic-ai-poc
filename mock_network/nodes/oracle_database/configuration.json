@@ -1,0 +1,7 @@
+{
+  "dependencies": [
+    "archive_storage"
+  ],
+  "display_name": "Oracle Database",
+  "node_id": "oracle_database"
+}

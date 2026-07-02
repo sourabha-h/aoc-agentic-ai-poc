@@ -1,0 +1,7 @@
+{
+  "dependencies": [
+    "api_gateway"
+  ],
+  "display_name": "SMS Gateway",
+  "node_id": "sms_gateway"
+}

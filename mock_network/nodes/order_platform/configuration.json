@@ -1,0 +1,8 @@
+{
+  "dependencies": [
+    "oracle_database",
+    "subscriber_platform"
+  ],
+  "display_name": "Order Activation Platform",
+  "node_id": "order_platform"
+}

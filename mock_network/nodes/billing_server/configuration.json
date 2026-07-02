@@ -1,0 +1,8 @@
+{
+  "dependencies": [
+    "oracle_database",
+    "subscriber_platform"
+  ],
+  "display_name": "Oracle BRM Billing Server",
+  "node_id": "billing_server"
+}
