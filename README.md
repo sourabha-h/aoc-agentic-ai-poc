@@ -77,20 +77,4 @@ Note: Exact commands may vary depending on your local environment and whether a 
 ## Demo notes
 All infrastructure, remediation actions, and integrations in this repo are mocked or simulated for safety. This project is intended to showcase Agentic AI behavior, workflows, and orchestration patterns—not to operate real systems.
 
-## Screenshots
-Placeholders (add actual screenshots before publishing):
-- `docs/screenshots/overview.png`
-- `docs/screenshots/topology.png`
-- `docs/screenshots/audit_trail.png`
-
-## Future Improvements
-- Add CI checks to scan for accidental secrets (e.g., GitHub Actions with `truffleHog`/`gitleaks`).
-- Add automated linting and tests for agents.
-- Improve demo scripts to seed different scenarios and capture videos/GIFs for the README.
-- Add CONTRIBUTING.md and LICENSE for clearer project governance.
-
 ---
-
-Notes:
-- Do not commit `.env` or any real credentials.
-- This README is curated for portfolio presentation; tailor screenshots and demo commands to your environment before publishing.
