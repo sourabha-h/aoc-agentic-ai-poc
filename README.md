@@ -77,4 +77,18 @@ Note: Exact commands may vary depending on your local environment and whether a 
 ## Demo notes
 All infrastructure, remediation actions, and integrations in this repo are mocked or simulated for safety. This project is intended to showcase Agentic AI behavior, workflows, and orchestration patterns—not to operate real systems.
 
+## Screenshots
+
+### AOC Dashboard
+
+![AOC Dashboard](docs/screenshots/dashboard.png)
+
+### Autonomous Health Discovery
+
+![Health Discovery](docs/screenshots/health-discovery.png)
+
+### Remediation and Verification Flow
+
+![Remediation Flow](docs/screenshots/remediation-flow.png)
+
 ---
